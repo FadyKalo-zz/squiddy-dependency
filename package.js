@@ -15,7 +15,7 @@ Package.on_use(function (api, where) {
 
 function getFilesFromFolder(packageName,folder){
 	// local imports
-	//var _=Npm.require("underscore");
+		var _ = Npm.require("underscore");
 	var fs=Npm.require("fs");
 	var path=Npm.require("path");
 	// helper function, walks recursively inside nested folders and return absolute filenames
