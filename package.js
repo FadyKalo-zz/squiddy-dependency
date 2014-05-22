@@ -3,9 +3,9 @@ Package.describe({
 });
 
 Package.on_use(function (api, where) {
-	var clientFiles=getFilesFromFolder("my-package","client");
+	var clientFiles = getFilesFromFolder("squiddy-dependency" , "public")
 	console.log(clientFiles);
-	api.add_files(clientFiles,"client");
+	api.add_files(clientFiles , "public");
 });
 
 
