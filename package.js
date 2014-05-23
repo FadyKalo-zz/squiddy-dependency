@@ -1,52 +1,81 @@
 Package.describe({
-	summary: "Meteorite package containing third party libraries required by Squiddy app."
+  summary: "Meteorite package containing third party libraries required by Squiddy app."
 });
 
 Package.on_use(function (api, where) {
-	var clientFiles = getFilesFromFolder("squiddy-dependency" , "public")
-	console.log(clientFiles);
-	api.add_files(clientFiles , "client");
+
+  /*
+   var clientFiles = getFilesFromFolder("squiddy-dependency" , "public")
+   console.log(clientFiles);
+   */
+  var clientFiles = [
+
+    /* ========= CSS ========= */
+    "assets/plugins/pace/pace-theme-flash.css",
+    "assets/plugins/boostrapv3/css/bootstrap.min.css",
+    "assets/plugins/boostrapv3/css/bootstrap-theme.min.css",
+    "assets/plugins/font-awesome/css/font-awesome.css",
+    "assets/css/animate.min.css",
+    "assets/plugins/bootstrap-datepicker/css/datepicker.css",
+    "assets/css/style.css",
+    "assets/css/responsive.css",
+    "assets/css/magic_space.css",
+    "assets/css/custom-icon-set.css",
+    /* ========= END ========= */
+
+    /* ========= JavaScript ========= */
+    "assets/plugins/jquery-1.8.3.min.js",
+    "assets/plugins/bootstrap/js/bootstrap.min.js",
+    "assets/plugins/pace/pace.min.js",
+    "assets/plugins/jquery-validation/js/jquery.validate.min.js",
+    "assets/plugins/jquery-lazyload/jquery.lazyload.min.js",
+    "assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js",
+    "assets/plugins/moment-with-langs.js"
+    /* =========    END     ========= */
+  ];
+  api.add_files(clientFiles, "client");
 });
 
 
-	/******************************
-	*				Helper methods        *
-	*******************************/
+/******************************
+ *        Helper methods        *
+ *******************************/
 
-function getFilesFromFolder(packageName,folder){
-	// local imports
-		var _ = Npm.require("underscore");
-	var fs=Npm.require("fs");
-	var path=Npm.require("path");
-	// helper function, walks recursively inside nested folders and return absolute filenames
-	function walk(folder){
-		var filenames=[];
-		// get relative filenames from folder
-		var folderContent=fs.readdirSync(folder);
-		// iterate over the folder content to handle nested folders
-		_.each(folderContent,function(filename){
-			// build absolute filename
-			var absoluteFilename=folder+path.sep+filename;
-			// get file stats
-			var stat=fs.statSync(absoluteFilename);
-			if(stat.isDirectory()){
-				// directory case => add filenames fetched from recursive call
-				filenames=filenames.concat(walk(absoluteFilename));
-			}
-			else{
-				// file case => simply add it
-				filenames.push(absoluteFilename);
-			}
-		});
-		return filenames;
-	}
-	// save current working directory (something like "/home/user/projects/my-project")
-	var cwd=process.cwd();
-	// chdir to our package directory
-	process.chdir("packages"+path.sep+packageName);
-	// launch initial walk
-	var result=walk(folder);
-	// restore previous cwd
-	process.chdir(cwd);
-	return result;
+function getFilesFromFolder(packageName, folder) {
+  // local imports
+  var _ = Npm.require("underscore");
+  var fs = Npm.require("fs");
+  var path = Npm.require("path");
+  // helper function, walks recursively inside nested folders and return absolute filenames
+  function walk(folder) {
+    var filenames = [];
+    // get relative filenames from folder
+    var folderContent = fs.readdirSync(folder);
+    // iterate over the folder content to handle nested folders
+    _.each(folderContent, function (filename) {
+      // build absolute filename
+      var absoluteFilename = folder + path.sep + filename;
+      // get file stats
+      var stat = fs.statSync(absoluteFilename);
+      if (stat.isDirectory()) {
+        // directory case => add filenames fetched from recursive call
+        filenames = filenames.concat(walk(absoluteFilename));
+      }
+      else {
+        // file case => simply add it
+        filenames.push(absoluteFilename);
+      }
+    });
+    return filenames;
+  }
+
+  // save current working directory (something like "/home/user/projects/my-project")
+  var cwd = process.cwd();
+  // chdir to our package directory
+  process.chdir("packages" + path.sep + packageName);
+  // launch initial walk
+  var result = walk(folder);
+  // restore previous cwd
+  process.chdir(cwd);
+  return result;
 }
