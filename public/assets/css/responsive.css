@@ -1113,11 +1113,11 @@ and (orientation : portrait) {
 	}
 }
 
-@media (max-width: 1000px){
-	#Parks.list .meta{
-		width: 150px;
-	}
-	
+@media (max-width: 1000px) {
+    #Parks.list .meta {
+        width: 150px;
+    }
+}
 
 @media (max-width: 840px){
 	#Parks.list .meta.region,

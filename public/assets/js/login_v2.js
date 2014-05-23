@@ -1,11 +1,11 @@
 $(document).ready(function() {		
 	$('#login_toggle').click(function(){
-		$('.block_login').show();
-		$('.block_register').hide();
+		$('#frm_login').show();
+		$('#frm_register').hide();
 	})
 	$('#register_toggle').click(function(){
-		$('.block_login').hide();
-		$('.block_register').show();
+		$('#frm_login').hide();
+		$('#frm_register').show();
 	})
 	
 	$(".lazy").lazyload({
@@ -22,7 +22,7 @@ $(document).ready(function() {
                         required: true
                     },
                     txtpassword: {
-                        required: true
+                        required: true,
                     }
                 },
 
@@ -37,39 +37,20 @@ $(document).ready(function() {
                 },
 
                 highlight: function (element) { // hightlight error inputs
-					var parent = $(element).parent();
-                    parent.removeClass('success-control').addClass('error-control');
+					
                 },
 
                 unhighlight: function (element) { // revert the change done by hightlight
-
+                    
                 },
 
                 success: function (label, element) {
 					var parent = $(element).parent('.input-with-icon');
-					parent.removeClass('error-control').addClass('success-control');
+					parent.removeClass('error-control').addClass('success-control'); 
                 },
-
 			    submitHandler: function(form) {
-//						form.submit();
+						form.submit();
 				}
             });	
-
-
-    var my_date = new Date();
-    my_date.setFullYear(my_date.getFullYear() - 18, my_date.getMonth(), my_date.getDay()-1)
-
-
-    a=moment(my_date).format('L');
-    console.log(a)
-
-    $('#reg_dob').datepicker({
-        format: "dd/mm/yyyy",
-        startView: 2,
-//        daysOfWeekDisabled: "3,4",
-        autoclose: true,
-//			todayHighlight: true,
-        endDate: a
-    });
 
 });
