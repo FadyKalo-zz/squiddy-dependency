@@ -30,7 +30,6 @@ Package.on_use(function (api, where) {
     "public/assets/plugins/jquery-validation/js/jquery.validate.min.js",
     "public/assets/plugins/jquery-lazyload/jquery.lazyload.min.js",
     "public/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js",
-    "public/assets/plugins/moment-with-langs.js"
     /* =========    END     ========= */
   ];
   api.add_files(clientFiles, "client");
