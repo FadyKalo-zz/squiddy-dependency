@@ -1,9 +1,9 @@
 {
-	"name": "squiddy-dependency",
-	"description": "Meteorite package containing third party libraries required by Squiddy app.",
-	"homepage": "https://github.com/giuse88/squiddy-dependency",
-	"author": "Giuseppe Pes <giuse88@gmail.com>, Fady Kalo <fadykalo@gmail.com>",
-	"version": "0.1.0",
-	"git": "https://github.com/giuse88/squiddy-dependency.git",
-	"packages": {}
+	"name" : "squiddy-dependency" ,
+	"description" : "Meteorite package containing third party libraries required by Squiddy app." ,
+	"homepage" : "https://github.com/giuse88/squiddy-dependency" ,
+	"author" : "Giuseppe Pes <giuse88@gmail.com>, Fady Kalo <fadykalo@gmail.com>" ,
+	"version" : "0.4" ,
+	"git" : "https://github.com/giuse88/squiddy-dependency.git" ,
+	"packages" : {}
 }
