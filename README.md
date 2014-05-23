@@ -4,7 +4,7 @@ Squiddy-dependency contains a meteorite package with third party libraries requi
 
 Version :
 ---
-The current version is **0.4** ( likely to be pushed to 1.0, if we didn't find any issue with the asset file) 
+The current version is **0.8** ( likely to be pushed to 1.0, if we didn't find any issue with the asset file) 
 
 Installation :
 ---
