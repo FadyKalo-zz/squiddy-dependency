@@ -11,26 +11,26 @@ Package.on_use(function (api, where) {
   var clientFiles = [
 
     /* ========= CSS ========= */
-    "assets/plugins/pace/pace-theme-flash.css",
-    "assets/plugins/boostrapv3/css/bootstrap.min.css",
-    "assets/plugins/boostrapv3/css/bootstrap-theme.min.css",
-    "assets/plugins/font-awesome/css/font-awesome.css",
-    "assets/css/animate.min.css",
-    "assets/plugins/bootstrap-datepicker/css/datepicker.css",
-    "assets/css/style.css",
-    "assets/css/responsive.css",
-    "assets/css/magic_space.css",
-    "assets/css/custom-icon-set.css",
+    "public/assets/plugins/pace/pace-theme-flash.css",
+    "public/assets/plugins/boostrapv3/css/bootstrap.min.css",
+    "public/assets/plugins/boostrapv3/css/bootstrap-theme.min.css",
+    "public/assets/plugins/font-awesome/css/font-awesome.css",
+    "public/assets/css/animate.min.css",
+    "public/assets/plugins/bootstrap-datepicker/css/datepicker.css",
+    "public/assets/css/style.css",
+    "public/assets/css/responsive.css",
+    "public/assets/css/magic_space.css",
+    "public/assets/css/custom-icon-set.css",
     /* ========= END ========= */
 
     /* ========= JavaScript ========= */
-    "assets/plugins/jquery-1.8.3.min.js",
-    "assets/plugins/bootstrap/js/bootstrap.min.js",
-    "assets/plugins/pace/pace.min.js",
-    "assets/plugins/jquery-validation/js/jquery.validate.min.js",
-    "assets/plugins/jquery-lazyload/jquery.lazyload.min.js",
-    "assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js",
-    "assets/plugins/moment-with-langs.js"
+    "public/assets/plugins/jquery-1.8.3.min.js",
+    "public/assets/plugins/bootstrap/js/bootstrap.min.js",
+    "public/assets/plugins/pace/pace.min.js",
+    "public/assets/plugins/jquery-validation/js/jquery.validate.min.js",
+    "public/assets/plugins/jquery-lazyload/jquery.lazyload.min.js",
+    "public/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js",
+    "public/assets/plugins/moment-with-langs.js"
     /* =========    END     ========= */
   ];
   api.add_files(clientFiles, "client");
