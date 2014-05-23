@@ -33,7 +33,6 @@ Package.on_use(function (api, where) {
     /* =========    END     ========= */
 
     /* =========    FONT    ========= */
-    "public/assets/img/work.jpg",
     "public/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff",
     "public/assets/plugins/font-awesome/fonts/fontawesome-webfont.ttf",
     "public/assets/plugins/font-awesome/fonts/fontawesome-webfont.svg"
