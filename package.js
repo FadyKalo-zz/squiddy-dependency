@@ -17,6 +17,7 @@ Package.on_use(function (api, where) {
     "public/assets/css/responsive.css",
     "public/assets/css/magic_space.css",
     "public/assets/css/custom-icon-set.css",
+    "public/assets/plugins/jquery-slider/css/jquery.sidr.light.css",
     /* ========= END ========= */
 
     /* ========= JavaScript ========= */
@@ -26,10 +27,32 @@ Package.on_use(function (api, where) {
     "public/assets/plugins/jquery-validation/js/jquery.validate.min.js",
     "public/assets/plugins/jquery-lazyload/jquery.lazyload.min.js",
     "public/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js",
+    "public/assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js",
+    "public/assets/plugins/breakpoints.js",
+    "public/assets/plugins/jquery-unveil/jquery.unveil.min.js",
+    "public/assets/plugins/jquery-block-ui/jqueryblockui.js",
+    "public/assets/plugins/jquery-slider/jquery.sidr.min.js",
+    "public/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
+    "public/assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js",
+    "public/assets/js/core.js",
+    "public/assets/js/chat.js",
+    "public/assets/js/demo.js",
     /* =========    END     ========= */
 
     /* =========    IMG     ========= */
     "public/assets/img/work.jpg",
+    "public/assets/img/logo.png",
+    "public/assets/img/profiles/d.jpg",
+    "public/assets/img/profiles/d2x.jpg",
+    "public/assets/img/profiles/h.jpg",
+    "public/assets/img/profiles/h2x.jpg",
+    "public/assets/img/profiles/c.jpg",
+    "public/assets/img/profiles/c2x.jpg",
+    "public/assets/img/profiles/avatar.jpg",
+    "public/assets/img/profiles/avatar2x.jpg",
+    "public/assets/img/profiles/avatar_small.jpg",
+    "public/assets/img/profiles/avatar_small2x.jpg",
+
     /* =========    END     ========= */
 
     /* =========    FONT    ========= */
