@@ -35,13 +35,12 @@ Package.on_use(function (api, where) {
     "public/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
     "public/assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js",
     "public/assets/js/core.js",
-    "public/assets/js/chat.js",
-    "public/assets/js/demo.js",
     /* =========    END     ========= */
 
     /* =========    IMG     ========= */
     "public/assets/img/work.jpg",
     "public/assets/img/logo.png",
+    "public/assets/img/logo2x.png",
     "public/assets/img/profiles/d.jpg",
     "public/assets/img/profiles/d2x.jpg",
     "public/assets/img/profiles/h.jpg",
@@ -52,13 +51,21 @@ Package.on_use(function (api, where) {
     "public/assets/img/profiles/avatar2x.jpg",
     "public/assets/img/profiles/avatar_small.jpg",
     "public/assets/img/profiles/avatar_small2x.jpg",
+    "public/assets/img/icon/top-trayx2.png",
+    "public/assets/img/icon/status2x.png",
+    "public/assets/img/pullup2x.png",
 
     /* =========    END     ========= */
 
     /* =========    FONT    ========= */
     "public/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff",
     "public/assets/plugins/font-awesome/fonts/fontawesome-webfont.ttf",
-    "public/assets/plugins/font-awesome/fonts/fontawesome-webfont.svg"
+    "public/assets/plugins/font-awesome/fonts/fontawesome-webfont.svg",
+    "public/assets/fonts/custom-set.dev.svg",
+    "public/assets/fonts/custom-set.eot",
+    "public/assets/fonts/custom-set.svg",
+    "public/assets/fonts/custom-set.ttf",
+    "public/assets/fonts/custom-set.woff",
     /* =========    END     ========= */
   ];
   //
