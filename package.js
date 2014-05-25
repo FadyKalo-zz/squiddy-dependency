@@ -52,6 +52,7 @@ Package.on_use(function (api, where) {
     "public/assets/img/icon/top-trayx2.png",
     "public/assets/img/icon/status2x.png",
     "public/assets/img/pullup2x.png",
+    "public/assets/img/icon/portlet-tray-2x.png",
 
     /* =========    END     ========= */
 
