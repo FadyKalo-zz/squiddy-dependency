@@ -26,7 +26,6 @@ Package.on_use(function (api, where) {
     "public/assets/plugins/jquery-validation/js/jquery.validate.min.js",
     "public/assets/plugins/jquery-lazyload/jquery.lazyload.min.js",
     "public/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js",
-    "public/assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js",
     "public/assets/plugins/breakpoints.js",
     "public/assets/plugins/jquery-unveil/jquery.unveil.min.js",
     "public/assets/plugins/jquery-block-ui/jqueryblockui.js",
@@ -67,8 +66,13 @@ Package.on_use(function (api, where) {
     "public/assets/fonts/custom-set.woff",
     /* =========    END     ========= */
   ];
-  //
+
+  // Package dependency
   api.use('jquery', 'client');
+  api.use('jquery-ui', 'client');
+  api.use('underscore', 'client');
+  //
+
   api.add_files(clientFiles, "client");
   //
   console.log("SQUIDDY-DEPENDENCY : Loaded asset.")
