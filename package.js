@@ -21,7 +21,6 @@ Package.on_use(function (api, where) {
     /* ========= END ========= */
 
     /* ========= JavaScript ========= */
-    "public/assets/plugins/jquery-1.8.3.min.js",
     "public/assets/plugins/bootstrap/js/bootstrap.min.js",
     "public/assets/plugins/pace/pace.min.js",
     "public/assets/plugins/jquery-validation/js/jquery.validate.min.js",
@@ -69,6 +68,7 @@ Package.on_use(function (api, where) {
     /* =========    END     ========= */
   ];
   //
+  api.use('jquery', 'client');
   api.add_files(clientFiles, "client");
   //
   console.log("SQUIDDY-DEPENDENCY : Loaded asset.")
