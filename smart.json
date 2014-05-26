@@ -6,6 +6,7 @@
   "version": "1.5",
   "git": "https://github.com/giuse88/squiddy-dependency.git",
   "packages": {
-    "jquery-ui": {}
+    "jquery-ui": {},
+    "bootstrap-3":{}
   }
 }
