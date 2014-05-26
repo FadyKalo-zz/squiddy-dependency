@@ -8,8 +8,6 @@ Package.on_use(function (api, where) {
 
     /* ========= CSS ========= */
     "public/assets/plugins/pace/pace-theme-flash.css",
-    "public/assets/plugins/boostrapv3/css/bootstrap.min.css",
-    "public/assets/plugins/boostrapv3/css/bootstrap-theme.min.css",
     "public/assets/plugins/font-awesome/css/font-awesome.css",
     "public/assets/css/animate.min.css",
     "public/assets/plugins/bootstrap-datepicker/css/datepicker.css",
@@ -21,7 +19,6 @@ Package.on_use(function (api, where) {
     /* ========= END ========= */
 
     /* ========= JavaScript ========= */
-    "public/assets/plugins/bootstrap/js/bootstrap.min.js",
     "public/assets/plugins/pace/pace.min.js",
     "public/assets/plugins/jquery-validation/js/jquery.validate.min.js",
     "public/assets/plugins/jquery-lazyload/jquery.lazyload.min.js",
@@ -64,7 +61,7 @@ Package.on_use(function (api, where) {
     "public/assets/fonts/custom-set.eot",
     "public/assets/fonts/custom-set.svg",
     "public/assets/fonts/custom-set.ttf",
-    "public/assets/fonts/custom-set.woff",
+    "public/assets/fonts/custom-set.woff"
     /* =========    END     ========= */
   ];
 
@@ -72,11 +69,12 @@ Package.on_use(function (api, where) {
   api.use('jquery', 'client');
   api.use('jquery-ui', 'client');
   api.use('underscore', 'client');
+  api.use('bootstrap-3', 'client');
   //
 
   api.add_files(clientFiles, "client");
   //
-  console.log("SQUIDDY-DEPENDENCY : Loaded asset.")
+  console.log("SQUIDDY-DEPENDENCY : Loaded asset.");
 });
 
 
