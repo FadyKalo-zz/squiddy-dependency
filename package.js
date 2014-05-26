@@ -7,6 +7,8 @@ Package.on_use(function (api, where) {
   var clientFiles = [
 
     /* ========= CSS ========= */
+    "public/assets/plugins/boostrapv3/css/bootstrap.min.css",
+    "public/assets/plugins/boostrapv3/css/bootstrap-theme.min.css",
     "public/assets/plugins/pace/pace-theme-flash.css",
     "public/assets/plugins/font-awesome/css/font-awesome.css",
     "public/assets/css/animate.min.css",
@@ -20,6 +22,7 @@ Package.on_use(function (api, where) {
     /* ========= END ========= */
 
     /* ========= JavaScript ========= */
+    "public/assets/plugins/bootstrap/js/bootstrap.min.js",
     "public/assets/plugins/pace/pace.min.js",
     "public/assets/plugins/jquery-validation/js/jquery.validate.min.js",
     "public/assets/plugins/jquery-lazyload/jquery.lazyload.min.js",
