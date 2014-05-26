@@ -69,7 +69,7 @@ Package.on_use(function (api, where) {
   api.use('jquery', 'client');
   api.use('jquery-ui', 'client');
   api.use('underscore', 'client');
-  api.use('bootstrap-3', 'client');
+//  api.use('bootstrap-3', 'client');
   //
 
   api.add_files(clientFiles, "client");
