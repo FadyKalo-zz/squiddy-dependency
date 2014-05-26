@@ -16,6 +16,7 @@ Package.on_use(function (api, where) {
     "public/assets/css/magic_space.css",
     "public/assets/css/custom-icon-set.css",
     "public/assets/plugins/jquery-slider/css/jquery.sidr.light.css",
+    'public/assets/plugins/bootstrap-tag/bootstrap-tagsinput.css',
     /* ========= END ========= */
 
     /* ========= JavaScript ========= */
@@ -30,6 +31,7 @@ Package.on_use(function (api, where) {
     "public/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
     "public/assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js",
     "public/assets/js/core.js",
+    "public/assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js",
     /* =========    END     ========= */
 
     /* =========    IMG     ========= */

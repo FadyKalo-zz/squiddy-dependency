@@ -4,7 +4,7 @@ Squiddy-dependency contains a meteorite package with third party libraries requi
 
 Version :
 ---
-The current version is **1.3** 
+The current version is **1.7** 
 
 Installation :
 ---
