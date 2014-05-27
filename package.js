@@ -19,6 +19,7 @@ Package.on_use(function (api, where) {
     "public/assets/css/custom-icon-set.css",
     "public/assets/plugins/jquery-slider/css/jquery.sidr.light.css",
     'public/assets/plugins/bootstrap-tag/bootstrap-tagsinput.css',
+    "public/assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.css",
     /* ========= END ========= */
 
     /* ========= JavaScript ========= */
@@ -35,6 +36,7 @@ Package.on_use(function (api, where) {
     "public/assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js",
     "public/assets/js/core.js",
     "public/assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js",
+    "public/assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.js",
     /* =========    END     ========= */
 
     /* =========    IMG     ========= */
