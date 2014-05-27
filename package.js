@@ -80,6 +80,10 @@ Package.on_use(function (api, where) {
   //
 
   api.add_files(clientFiles, "client");
+  api.add_files('public/assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css', 'client');
+  api.add_files("public/assets/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js", 'client', {bare:true});
+  api.add_files('public/assets/plugins/bootstrap-wysihtml5/wysiwyg-color.css', 'client');
+  api.add_files("public/assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js", 'client', {bare:true});
   //
   console.log("SQUIDDY-DEPENDENCY : Loaded asset.");
 });
